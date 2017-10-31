@@ -22,10 +22,13 @@ class MainScreen extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native Basic Template!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          To get started, edit main-screen.js.
+        </Text>
+        <Text style={styles.instructions}>
+          This project uses React Navigation. You can add screens to /screens, then add them to StackNavigator in app.js.
         </Text>
         <Text style={styles.instructions}>
           {instructions}
@@ -41,6 +44,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    padding: 15
   },
   welcome: {
     fontSize: 20,
@@ -51,6 +55,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+    marginTop: 15
   },
 });
 

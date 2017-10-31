@@ -4,19 +4,15 @@
 
 import React, { Component } from 'react';
 
-import {
-  StackNavigator,
-} from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 
-import MainScreen                 from 'MainScreen'
+import MainScreen from 'MainScreen';
 
 const App = StackNavigator({
   Main: {screen: MainScreen},
 }, {
   headerMode: 'none'
 });
-
-
 
 //Copied from https://reactnavigation.org/docs/guides/screen-tracking#Screen-tracking
 function getCurrentRouteName(navigationState) {
@@ -33,7 +29,6 @@ function getCurrentRouteName(navigationState) {
 
 export default () => (
   <App
-    ref={(nav) => VoiceRecognizer.set({navigator: nav})}
     onNavigationStateChange={(prevState, currentState) => {
       const currentScreen = getCurrentRouteName(currentState);
       const prevScreen = getCurrentRouteName(prevState);
