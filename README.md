@@ -3,7 +3,7 @@
 ## Getting Started
 
 ### Install Instructions
-`react-native init ProjectNameHere https://github.com/digitalscientists/react-native-template-basic`
+`react-native init ProjectNameHere --template https://github.com/digitalscientists/react-native-template-basic`
 
 The following dependencies will be installed and linked automatically:  
 - React Navigation
