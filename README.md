@@ -6,8 +6,9 @@
 `react-native init ProjectNameHere --template https://github.com/digitalscientists/react-native-template-basic`
 
 The following dependencies will be installed and linked automatically:  
-- React Navigation
-- React Native Vector Icons
+- [React Navigation](https://reactnavigation.org/)
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+- [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 
 After installation is complete,
 `cd ProjectNameHere` and `react-native run-ios` or `react-native run-android`
@@ -28,3 +29,18 @@ This file houses reusable dimensions like header height, footer height, screen h
 ##### config/spacing.js
 
 This file houses standard spacing styles such as containers and general padding to be used throughout the app. Edits can be made, but the dimensions here are pulled from `constants.js`.
+
+#### Import module resolver
+
+This template is created using Babel Plugin Module Resolver to simplify the require and import paths in the project.
+
+Example:
+```
+// Use this:
+import colors from 'config/colors';
+// Instead of:
+import colors from '../../config/colors';
+
+// Also works with require calls
+const logo = require('assets/images/logo.png');
+```

@@ -1,7 +1,3 @@
-/**
-* @providesModule Colors
-*/
-
 const colors = {
   black: '#000000',
   mineshaft: '#333333',

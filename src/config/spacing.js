@@ -1,10 +1,7 @@
-/**
-* @providesModule Spacing
-*/
-
 import { StyleSheet, Platform } from 'react-native';
-import constants from 'Constants';
-import colors from 'Colors';
+
+import constants from 'config/constants';
+import colors from 'config/colors';
 
 let defaultSpacer = 10;
 let positions = ['Top', 'Right', 'Left', 'Bottom'];

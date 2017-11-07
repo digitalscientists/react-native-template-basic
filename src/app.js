@@ -1,12 +1,8 @@
-/**
-* @providesModule App
-*/
-
 import React, { Component } from 'react';
 
 import { StackNavigator } from 'react-navigation';
 
-import MainScreen from 'MainScreen';
+import MainScreen from 'screens/main-screen';
 
 const App = StackNavigator({
   Main: {screen: MainScreen},

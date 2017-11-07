@@ -1,7 +1,3 @@
-/**
-* @providesModule ObservableModel
-*/
-
 class ObservableModel {
 
   listeners = []

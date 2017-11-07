@@ -1,7 +1,3 @@
-/**
-* @providesModule Api
-*/
-
 class API {
 
   constructor(host){

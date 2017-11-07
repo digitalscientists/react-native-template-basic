@@ -1,7 +1,3 @@
-/**
-* @providesModule Constants
-*/
-
 import { Dimensions, Platform } from 'react-native';
 
 let headerHeight = Platform.OS === 'ios' ? 64 : 44;
